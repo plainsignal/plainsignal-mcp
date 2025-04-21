@@ -37,6 +37,10 @@ plainsignal-mcp --token <your_access_token>
 
 # If installed locally
 npx plainsignal-mcp --token <your_access_token>
+
+# Or using an environment variable
+export PLAINSIGNAL_TOKEN=<your_access_token>
+plainsignal-mcp
 ```
 
 ### When using from source
@@ -45,6 +49,10 @@ Run the server with your access token:
 
 ```bash
 node src/index.js --token <your_access_token>
+
+# Or using an environment variable
+export PLAINSIGNAL_TOKEN=<your_access_token>
+node src/index.js
 ```
 
 You can also specify a custom API base URL:

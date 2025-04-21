@@ -314,12 +314,13 @@ class PlainSignalStdioServer {
     }
 }
 
-const server = new PlainSignalStdioServer(argv.token, apiBaseURL);
-if (!argv.token) {
+const server = new PlainSignalStdioServer(argv.token || process.env.PLAINSIGNAL_TOKEN, apiBaseURL);
+if (!argv.token && !process.env.PLAINSIGNAL_TOKEN) {
     console.error('Error: Access token is required');
     console.error('Usage: node src/index.js --token <access_token> [--api-base-url <api_base_url>]');
     console.error('   or: node src/index.js -t <access_token> [-u <api_base_url>]');
-    console.error('Default API base URL: http://app.plainsignal.com/api/v1');
+    console.error('   or: export PLAINSIGNAL_TOKEN=<access_token> and then run the command');
+    console.error('Default API base URL: https://app.plainsignal.com/api/v1');
     process.exit(1);
 }
 await server.run().catch(console.error);
