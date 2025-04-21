@@ -3,9 +3,15 @@
   "version": "0.1.0",
   "type": "module",
   "main": "src/index.js",
+  "files": [
+    "src/",
+    "examples/",
+    "LICENSE",
+    "README.md"
+  ],
   "scripts": {
     "start": "node src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo \"No tests specified yet\" && exit 0",
     "example": "node examples/client.js",
     "resources-example": "node examples/resources-client.js",
     "prepublishOnly": "npm test",
@@ -14,7 +20,7 @@
     "postversion": "git push && git push --tags"
   },
   "bin": {
-    "plainsignal-mcp": "./src/index.js"
+    "plainsignal-mcp": "src/index.js"
   },
   "keywords": [
     "plainsignal",
