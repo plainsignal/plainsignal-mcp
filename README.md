@@ -10,10 +10,10 @@ This is a Model Context Protocol (MCP) server implementation for PlainSignal ana
 
 ```bash
 # Install globally
-npm install -g plainsignal-mcp
+npm install -g @plainsignal/plainsignal-mcp
 
 # Or install locally in your project
-npm install plainsignal-mcp
+npm install @plainsignal/plainsignal-mcp
 ```
 
 #### From source

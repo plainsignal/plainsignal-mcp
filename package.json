@@ -1,5 +1,5 @@
 {
-  "name": "plainsignal-mcp",
+  "name": "@plainsignal/plainsignal-mcp",
   "version": "0.1.2",
   "type": "module",
   "main": "src/index.js",
