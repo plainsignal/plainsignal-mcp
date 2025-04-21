@@ -77,6 +77,25 @@ export API_BASE_URL=https://app.plainsignal.com/api/v1
 
 By default, the server connects to `https://app.plainsignal.com/api/v1`.
 
+## MCP Server configs
+
+### Claude Desktop
+
+Add this snippet to your `claude_desktop_config.json`:
+
+```
+{
+  "mcpServers": {
+    "plainsignal": {
+      "command": "npx -y @plainsignal/plainsignal-mcp",
+      "env": {
+        "PLAINSIGNAL_TOKEN": "<YOUR_PLAINSIGNAL_TOKEN>"
+      }
+    }
+  }
+}
+```
+
 ## Available Tools
 
 The server provides the following tools:
