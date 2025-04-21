@@ -1,0 +1,47 @@
+{
+  "name": "plainsignal-mcp",
+  "version": "0.1.0",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "example": "node examples/client.js",
+    "resources-example": "node examples/resources-client.js",
+    "prepublishOnly": "npm test",
+    "preversion": "npm test",
+    "version": "git add -A",
+    "postversion": "git push && git push --tags"
+  },
+  "bin": {
+    "plainsignal-mcp": "./src/index.js"
+  },
+  "keywords": [
+    "plainsignal",
+    "analytics",
+    "mcp",
+    "model-context-protocol",
+    "claude",
+    "ai",
+    "reporting"
+  ],
+  "author": "PlainSignal, Inc.",
+  "license": "MIT",
+  "description": "PlainSignal MCP Server for Analytics Data",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.10.1",
+    "minimist": "^1.2.8",
+    "zod": "^3.22.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "homepage": "https://github.com/plainsignal/plainsignal-mcp",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plainsignal/plainsignal-mcp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/plainsignal/plainsignal-mcp/issues"
+  }
+}

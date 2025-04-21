@@ -1,0 +1,23 @@
+# Development files
+node_modules/
+.git/
+.github/
+.vscode/
+
+# Test files
+test.sh
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment variables
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# OS specific files
+.DS_Store
+Thumbs.db
