@@ -157,3 +157,7 @@ The resources example client demonstrates:
 2. Listing available resources
 3. Reading the `listDomains` resource
 4. Processing and displaying the results
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
